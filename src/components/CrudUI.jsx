@@ -3,7 +3,7 @@ import axios from "axios";
 import { FaTrash } from "react-icons/fa";
 import "./CrudUI.css";
 
-const API_URL = "http://localhost:5032/api/users"; // Adjust if needed
+const API_URL = "http://localhost:5032/api/users"; 
 
 const CrudUI = () => {
   const [users, setUsers] = useState([]);
@@ -25,9 +25,9 @@ const CrudUI = () => {
   return (
     <div className="container">
       <div className="card">
-        <h2>CRUD Operation</h2>
+        <h2>Recipe Management system</h2>
         <div className="form-group">
-          <input type="text" placeholder="UserName" value={username} onChange={(e) => setUsername(e.target.value)} />
+          <input type="text" placeholder="RecipeName" value={username} onChange={(e) => setUsername(e.target.value)} />
           <input type="number" placeholder="Age" value={age} onChange={(e) => setAge(e.target.value)} />
           <button className="submit-btn" onClick={handleSubmit}>SUBMIT</button>
         </div>
