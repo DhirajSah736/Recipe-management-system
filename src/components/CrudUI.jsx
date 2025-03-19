@@ -59,61 +59,7 @@ const RecipeManagement = () => {
   
 
 
-  // const handleSubmit = async () => {
-  //   const newRecipe = { recipeName, ingredients, instructions, category };
   
-  //   console.log("Submitting Recipe:", newRecipe);
-  
-  //   try {
-  //     if (editingId) {
-  //       await axios.put(`${API_URL}/${editingId}`, newRecipe);
-  //     } else {
-  //       const res = await axios.post(API_URL, newRecipe, {
-  //         headers: { "Content-Type": "application/json" }
-  //       });
-  //       setRecipes([...recipes, res.data]);
-  //     }
-  
-  //     setRecipeName("");
-  //     setIngredients("");
-  //     setInstructions("");
-  //     setCategory("");
-  //     setEditingId(null);
-  
-  //     fetchRecipes();
-  //   } catch (error) {
-  //     console.error("Error submitting data:", error.response?.data || error.message);
-  //   }
-  // };
-  
-
-  // const handleSubmit = async () => {
-  //   const newRecipe = { 
-  //     id: editingId, 
-  //     recipeName, 
-  //     ingredients, 
-  //     instructions, 
-  //     category 
-  //   };
-
-  //   try {
-  //     if (editingId) {
-  //       await axios.put(`${API_URL}/${editingId}`, newRecipe);
-  //     } else {
-  //       const res = await axios.post(API_URL, newRecipe);
-  //       setRecipes([...recipes, res.data]);
-  //     }
-
-  //     setRecipeName("");
-  //     setIngredients("");
-  //     setInstructions("");
-  //     setCategory("");
-  //     setEditingId(null);
-  //     fetchRecipes(); 
-  //   } catch (error) {
-  //     console.error("Error submitting data:", error);
-  //   }
-  // };
 
   const handleEdit = (recipe) => {
     setRecipeName(recipe.recipeName);
