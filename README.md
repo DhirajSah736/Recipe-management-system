@@ -53,5 +53,5 @@ npm start
 ## 🔗 API Integration
 This frontend connects to an **ASP.NET Core API**. Ensure that your backend is running and updat.
 ```js
-const API_BASE_URL = "http://localhost:5032/api/recipes"; // Change this if necessary
+const API_URL = "http://localhost:5032/api/recipes"; // Change this if necessary
 ```
